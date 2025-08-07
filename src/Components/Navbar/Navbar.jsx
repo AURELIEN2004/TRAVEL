@@ -1,8 +1,10 @@
 import React,{useState} from 'react'
 import './navbar.css'
-// import {MdOutlineTravelExplore} from'react-icons/md'
-// import {AIFillCloseCircle} from'react-icons/ai'
-// import {TbGridDots} from'react-icons/tb'
+import './navbar.scss'
+
+import {MdOutlineTravelExplore} from'react-icons/md'
+import { AiFillCloseCircle } from 'react-icons/ai';
+import {TbGridDots} from'react-icons/tb'
 
 
 
@@ -22,56 +24,56 @@ const Navbar = () => {
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          <a href="" className="logo flex">
-            <h1>{/* <MdOutlineTravelExplore className="icon"/>  */} Travel.</h1>
+          <a href="/" className="logo flex">
+            <h1><MdOutlineTravelExplore className="icon"/>Travel.</h1>
           </a>
         </div>
 
-        <div className="(active)">
+        <div className={active}>
           <ul className="navLists flex">
 
              <li className="navItem">
-              <a href="" className="navLink">Home</a>
+              <a href="/" className="navLink">Home</a>
              </li>
 
              <li className="navItem">
-              <a href="" className="navLink">package</a>
+              <a href="/" className="navLink">package</a>
              </li>
              
 
              <li className="navItem">
-              <a href="" className="navLink">Shop</a>
+              <a href="/" className="navLink">Shop</a>
              </li>
 
              <li className="navItem">
-              <a href="" className="navLink">About</a>
+              <a href="/" className="navLink">About</a>
              </li>
 
              <li className="navItem">
-              <a href="" className="navLink">pages</a>
+              <a href="/" className="navLink">pages</a>
              </li>
 
              <li className="navItem">
-              <a href="" className="navLink">News</a>
+              <a href="/" className="navLink">News</a>
              </li>
 
              <li className="navItem">
-              <a href="" className="navLink">Contact</a>
+              <a href="/" className="navLink">Contact</a>
              </li>
 
              <button className="btn">
-              <a href=''>BOOK NOW</a>
+              <a href='/'>BOOK NOW</a>
              </button>
           </ul>
 
-          {/* <div onClik={removeNavbar} className="closeNavbar">
-            <AIFillCloseCircle className="icon"/>
-          </div> */}
+          <div onClick={removeNavbar} className="closeNavbar">
+            <AiFillCloseCircle className="icon"/>
+          </div>
         </div>
         
-        {/* <div onClick=(showNav) className="togglenavbar">
+        <div onClick={showNav} className="togglenavbar">
           <TbGridDots className="icon"/> 
-        </div>    */}
+        </div>    
 
       </header>
     </section>

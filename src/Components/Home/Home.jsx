@@ -1,9 +1,11 @@
 import React from 'react'
 import './home.css'
+import './home.scss'
 
- import video from '../../Assets/video.mp4'
-//  import {Grlocation} from 'react-icons/gr'
-//  import {HiFilter} from 'react-icons/hi'
+
+ import video from '../../Assets/video.mp4';
+import { GrLocation } from 'react-icons/gr';
+ import {HiFilter} from 'react-icons/hi';
 
 
 const Home = () => {
@@ -31,7 +33,7 @@ const Home = () => {
             <label htmlFor="city">Search your destination</label>
             <div className="input flex">
               <input type="text" placeholder="enter name here..." />
-              {/* <Grlocation className="icon"/> */}
+              <GrLocation className="icon"/>
             </div>
           </div>
 
@@ -53,7 +55,7 @@ const Home = () => {
           </div>
 
             <div className="searchOption flex">
-                 {/* <HiFilter className="icon"/> */}
+                 <HiFilter className="icon"/>
                  <span>MORE FILTERS</span>
             </div>
         </div>

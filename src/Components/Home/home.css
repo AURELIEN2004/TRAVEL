@@ -7,6 +7,7 @@
     --border-color: #ccc;
     --gradientcolor:rgb(96, 96, 187);
     --whiteColor:rgb(253, 252, 252);
+    --inputColor: rgb(107, 98, 98);
 
 }
 
@@ -70,8 +71,65 @@
             background: var(--whiteColor);
             border-radius: 10px;
             gap: 1rem;
+            
+            label{
+                display: block;
+                color: var(--text-color);
+                padding-bottom: 10px;
+                font-size: 13px;
+                font-weight: 500;
+            }
+             
+            .label_total{
+                justify-content: space-between;
+                align-items: center;
+
+                .total{
+                    color: var(--text-color);
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .input{
+                height: 40px;
+                padding: 0 1rem;
+                background: var(--inputColor);
+                border-radius: 3rem;
+
+                input{
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    &::placeholder{
+                        font-size: 13px;
+                    }
+                }
+
+                .icon{
+                    font-size: 18px;
+                    color: var(--primary-color)
+                    !important;
+                    margin-left: 10px;
+                }
+
+                .imput[types=range]{
+                    background: blue;
+                }
+
+            }
+
+
+          
 
         }
+
+
+
     }
 
 

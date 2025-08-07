@@ -1,7 +1,10 @@
 import React from 'react'
 import './home.css'
+
  import video from '../../Assets/video.mp4'
 //  import {Grlocation} from 'react-icons/gr'
+//  import {HiFilter} from 'react-icons/hi'
+
 
 const Home = () => {
   return (
@@ -17,7 +20,8 @@ const Home = () => {
           </span>
           
           <h1 className="homeTitle">
-            search your holiday
+            search your <br />
+            holiday
           </h1>
         </div>
 
@@ -48,6 +52,10 @@ const Home = () => {
             </div>
           </div>
 
+            <div className="searchOption flex">
+                 {/* <HiFilter className="icon"/> */}
+                 <span>MORE FILTERS</span>
+            </div>
         </div>
       </div>
 

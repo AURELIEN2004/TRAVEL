@@ -52,126 +52,154 @@
 
     .textDiv {
       padding: 2rem 0;
-      text-align: center;
+      padding-left: 10px;
 
       .smallText {
         font-size: 0.8rem;
         text-transform: uppercase;
+        text-align: left;
       }
 
       .homeTitle {
         font-size: 2rem;
         font-weight: 700;
         line-height: 1.3;
+        text-align: left;
       }
     }
 
-    .cardDiv {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      background: var(--whiteColor);
-      border-radius: 10px;
-      padding: 2rem 1rem;
-      color: var(--blackColor);
+          .carDiv{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            background: var(--whiteColor);
+            border-radius: 10px;
+            padding: 2rem 1rem;
+            color: var(--blackColor);
 
-      label {
-        display: block;
-        color: var(--textColor);
-        font-size: 0.8rem;
-        font-weight: 500;
-        margin-bottom: 0.5rem;
-      }
+            label {
+              display: block;
+              color: var(--textColor);
+              font-size: 0.8rem;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+            }
 
-      .input {
-        display: flex;
-        align-items: center;
-        background: var(--inputColor);
-        border-radius: 3rem;
-        padding: 0 1rem;
-        height: 40px;
+            .input {
+              display: flex;
+              align-items: center;
+              background: var(--inputColor);
+              border-radius: 3rem;
+              padding: 0 1rem;
+              height: 40px;
 
-        input {
-          background: none;
-          border: none;
-          outline: none;
-          width: 100%;
-          font-size: 0.8rem;
-          font-weight: 500;
+              input {
+                background: none;
+                border: none;
+                outline: none;
+                width: 100%;
+                font-size: 0.8rem;
+                font-weight: 500;
 
-          &::placeholder {
-            font-size: 0.8rem;
+                &::placeholder {
+                  font-size: 0.8rem;
+                }
+              }
+
+              .icon {
+                font-size: 18px;
+                color: var(--PrimaryColor);
+                margin-left: 10px;
+              }
+            }
+
+            .input-flex {
+              display: flex;
+              align-items: center;
+              background: var(--inputColor);
+              border-radius: 3rem;
+              padding: 0 1rem;
+              height: 40px;
+
+              input {
+                width: 100%;
+                border: none;
+                outline: none;
+                background: none;
+                font-size: 0.8rem;
+              }
+            }
+
+            .label_total {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .total {
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--textColor);
+              }
+            }
+
+            .searchOption {
+              background: var(--gradientColor);
+              width: max-content;
+              bottom: -0.7em;
+              column-gap: .8rem;
+              padding: 5px 1rem;
+              border-radius: 3rem;
+              left: 50%;
+              justify-content: center;
+              cursor: pointer;
+
+
+              .icon {
+                font-size: 20px;
+              }
+
+              &:hover {
+                background-color: var(--primaryColor);
+              }
+              span{
+                font-style: 13px;
+              }
+              color: var(--whiteColor);
+            }
           }
-        }
 
-        .icon {
-          font-size: 18px;
-          color: var(--PrimaryColor);
-          margin-left: 10px;
-        }
-      }
+          .homeFooterIcons{
+            width: 100%;
+            justify-content: space-between;
 
-      .input-flex {
-        display: flex;
-        align-items: center;
-        background: var(--inputColor);
-        border-radius: 3rem;
-        padding: 0 1rem;
-        height: 40px;
+            .icon{
+              font-size: 20px;
+              margin: 0 5px;
+              color: var(--whiteColor);
+              font-weight: 600;
 
-        input {
-          width: 100%;
-          border: none;
-          outline: none;
-          background: none;
-          font-size: 0.8rem;
-        }
-      }
+              &:hover{
+                 color: var(--primaryColor);
+              }
+            }
+          }
 
-      .label_total {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        .total {
-          font-size: 1rem;
-          font-weight: 600;
-          color: var(--textColor);
-        }
-      }
-
-      .searchOption {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        cursor: pointer;
-        color: var(--PrimaryColor);
-        font-weight: 600;
-
-        .icon {
-          font-size: 20px;
-        }
-
-        &:hover {
-          color: var(--SecondaryColor);
-        }
-      }
-    }
   }
 
   /* 📱 Responsive tweaks */
-  @media screen and (max-width: 768px) {
-    .homeContent {
-      padding: 6rem 1rem 2rem;
+  // @media screen and (max-width: 768px) {
+  //   .homeContent {
+  //     padding: 6rem 1rem 2rem;
 
-      .homeTitle {
-        font-size: 1.5rem;
-      }
+  //     .homeTitle {
+  //       font-size: 1.5rem;
+  //     }
 
-      .cardDiv {
-        grid-template-columns: 1fr;
-        padding: 1.5rem 1rem;
-      }
-    }
-  }
+  //     .cardDiv {
+  //       grid-template-columns: 1fr;
+  //       padding: 1.5rem 1rem;
+  //     }
+  //   }
+  // }
 }

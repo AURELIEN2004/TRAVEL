@@ -12,6 +12,7 @@
   --cardBG: rgb(225, 225, 235);
 }
 
+/* 📦 Layout principal */
 .header {
   position: fixed;
   top: 0;
@@ -33,7 +34,7 @@
     cursor: pointer;
 
     .icon {
-      font-size: 25px;
+      font-size: 1.5rem;
       color: var(--PrimaryColor);
       margin-right: 0.5rem;
     }
@@ -44,7 +45,7 @@
     cursor: pointer;
 
     .icon {
-      font-size: 25px;
+      font-size: 1.5rem;
       color: var(--PrimaryColor);
       transition: color 0.3s ease;
 
@@ -62,16 +63,14 @@
       gap: 2rem;
       align-items: center;
 
-      .navItem {
-        .navLink {
-          color: var(--textColor);
-          font-size: 0.9rem;
-          font-weight: 600;
-          transition: color 0.3s ease;
+      .navItem .navLink {
+        color: var(--textColor);
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: color 0.3s ease;
 
-          &:hover {
-            color: var(--PrimaryColor);
-          }
+        &:hover {
+          color: var(--PrimaryColor);
         }
       }
 
@@ -79,7 +78,6 @@
         background: var(--PrimaryColor);
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
-        transition: background 0.3s ease;
 
         a {
           color: var(--whiteColor);
@@ -93,7 +91,7 @@
     }
   }
 
-  /* 📱 Mobile styles */
+  /* 📱 Mobile (≤768px) */
   @media screen and (max-width: 768px) {
     .togglenavbar {
       display: block;
@@ -104,7 +102,7 @@
       top: -1000px;
       left: 50%;
       transform: translateX(-50%);
-      width: 80%;
+      width: 90%;
       background: var(--whiteColorDeam);
       border-radius: 1rem;
       padding: 2rem 1rem;
@@ -118,10 +116,8 @@
         gap: 1.5rem;
         width: 100%;
 
-        .navItem {
-          .navLink {
-            font-size: 1rem;
-          }
+        .navItem .navLink {
+          font-size: 1rem;
         }
 
         .btn {
@@ -135,7 +131,7 @@
         position: absolute;
         top: 1rem;
         right: 1rem;
-        font-size: 25px;
+        font-size: 1.5rem;
         color: var(--PrimaryColor);
         cursor: pointer;
 
@@ -148,5 +144,43 @@
     .activeNavbar {
       top: 6rem;
     }
+  }
+
+  /* 🧑‍💻 Tablette (769px–1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navLists {
+      gap: 1.5rem;
+
+      .navItem .navLink {
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        padding: 0.4rem 0.8rem;
+      }
+    }
+  }
+
+  /* 🖥️ Desktop large (≥1440px) */
+  @media screen and (min-width: 1440px) {
+    .header {
+      padding: 1rem 4rem;
+    }
+
+    .navLists {
+      gap: 3rem;
+
+      .navItem .navLink {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* 🧼 Nettoyage */
+@media screen and (min-width: 769px) {
+  .togglenavbar,
+  .closeNavbar {
+    display: none;
   }
 }

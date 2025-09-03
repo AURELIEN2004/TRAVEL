@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="contactDiv flex">
           <div className="text">
                <small>KEEP IN TOUCH</small>
-               <h2>Travel with us</h2>
+               <h2>Travel With Us</h2>
           </div>
 
           <div className="inputDiv flex">
